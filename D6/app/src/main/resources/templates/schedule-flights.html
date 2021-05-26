@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Broiler</title>
+        <link rel="shortcut icon" href="/images/logo.png" type="image/png">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <nav>
+            <a href="/scheduleFlights">Schedule Flights</a>
+            <a href="/paths">Paths</a>
+            <a href="/boardingPasses">Boarding Passes</a>
+        </nav>
+        <br>
+        <form>
+            <label>City:</label>
+            <select id="cities"></select>
+            <label>Airport:</label>
+            <select id="airports"></select>
+            <label>Type:</label>
+            <select id="type">
+                <option value="true">Arriving</option>
+                <option value="false">Departing</option>
+            </select>
+            <label>Day:</label>
+            <select id="day">
+                <option value="1">Monday</option>
+                <option value="2">Tuesday</option>
+                <option value="3">Wednesday</option>
+                <option value="4">Thursday</option>
+                <option value="5">Friday</option>
+                <option value="6">Saturday</option>
+                <option value="7">Sunday</option>
+            </select>
+            <input id="show-schedule" type="submit" value="Show schedule">
+        </form>
+        <br>
+        <h1 id="flights-number"></h1>
+        <ol id="flights"></ol>
+
+        <script src="/js/schedule-flights.js"></script>
+    </body>
+</html>

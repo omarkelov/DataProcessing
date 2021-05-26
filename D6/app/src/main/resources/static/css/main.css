@@ -1,0 +1,17 @@
+body {
+    position: relative;
+    font: 18px Trebuchet MS, sans-serif;
+	background: #2b2b2b;
+	color: #a6b6a8;
+}
+
+input, select, button {
+    background: #202122;
+	color: #5f94b7;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+a, a:visited {
+    margin-left: 10px;
+    color: #88C999;
+}

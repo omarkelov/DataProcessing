@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Broiler</title>
+        <link rel="shortcut icon" href="/images/logo.png" type="image/png">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+        <nav>
+            <a href="/scheduleFlights">Schedule Flights</a>
+            <a href="/paths">Paths</a>
+            <a href="/boardingPasses">Boarding Passes</a>
+        </nav>
+        <br>
+        <div>
+            <label>ID:</label>
+            <input id="passenger-id" type="text">
+            <label>Full Name:</label>
+            <input id="passenger-name" type="text">
+            <label>Phone:</label>
+            <input id="passenger-phone" type="text">
+            <label>Email:</label>
+            <input id="passenger-email" type="text">
+        </div>
+        <br>
+        <form>
+            <label>From:</label>
+            <select id="cities-from"></select>
+            <label>To:</label>
+            <select id="cities-to"></select>
+            <label>Date:</label>
+            <input id="departure-date" type="date">
+            <label>Max connections:</label>
+            <input id="max-connections" type="number" min="0" max="3" value="0">
+            <label>Fare conditions:</label>
+            <select id="fare-conditions">
+                <option value="Economy">Economy</option>
+                <option value="Comfort">Comfort</option>
+                <option value="Business">Business</option>
+            </select>
+            <input id="find-paths" type="submit" value="Find paths">
+        </form>
+        <br>
+        <h1 id="paths-number"></h1>
+        <ol id="paths"></ol>
+
+        <script src="/js/paths.js"></script>
+    </body>
+</html>
